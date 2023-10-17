@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5e5;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 800px;
+    height: 402px;
+    background-image: url(../image/bg-desktop.png);
+    display: flex;
+    align-items: center;
+}
+
+.container .texto {
+    margin-left: 50px;
+    width: 300px;
+    height: 111px;
+    color: #ffffff;
+}
+
+.container .texto .titulo {
+    font-weight: 900;
+    font-size: 20px;
+    width: 288px;
+    height: 46px;
+    margin-bottom: 10px;
+}
+
+.container .texto .sub-titulo {
+    width: 300px;
+    height: 54px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.container .formulario {
+    background-color: #ffffff;
+    width: 340px;
+    height: 378px;    
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.borda {
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.input {
+    width: 290px;
+    height: 35px;
+    padding: 9px 11px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.container .formulario .input::placeholder {
+    color: #a8a8a8;
+}
+
+.container .formulario .msg {
+    width: 290px;
+    height: 100px;
+    margin-bottom: 1px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.container .formulario .msg::placeholder {
+    color: #a8a8a8;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 9px 11px;
+}
+
+.container .formulario span {
+    margin-right: 150px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+.container .formulario #btn-enviar {
+    width: 298px;
+    height: 41px;
+    background-color: #3ccc87;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.campo-obrigatorio {
+    color: #f52e2e;
+    font-size: 8px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-right: 210px;
+    opacity: 0;
+}
+
+.sem-preenchimento {
+    opacity: 1;
+}
+
+.nao-verificado {
+    border: 1px solid #f52e2e;
+    border-radius: 5px;
+}
+
+.verificado {
+    border: 1px solid #3ccc87;
+    border-radius: 5px;
+}

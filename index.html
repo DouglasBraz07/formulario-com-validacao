@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest - HTML CSS JS - INTERMEDIARIO</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <div class="texto">
+                <h1 class="titulo">FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h1>
+
+                <p class="sub-titulo">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+            </div>
+
+            <form class="formulario" method="get">
+                <input class="input borda" id="nome" type="text" placeholder="Nome completo *" autocomplete="off"/>
+                <label for="nome" class="campo-obrigatorio ">Campo obrigatorio</label>
+
+                <input class="input borda" id="email" type="email" placeholder="Email *" autocomplete="off" >
+                <label for="email" class="campo-obrigatorio">Campo obrigatorio</label>
+
+                <input class="input borda" id="numero" type="number" placeholder="Telefone *" />
+                <label for="numero" class="campo-obrigatorio">Campo obrigatorio</label>
+
+                <textarea class="msg borda" id="msg" name="mensagem" cols="30" rows="10" placeholder="mensagem *" ></textarea>
+                <label for="msg" class="campo-obrigatorio">Campo obrigatorio</label>
+
+                <span>*campos obrigatórios</span>
+                <input type="submit" id="btn-enviar" class="botao">
+           
+            </form>
+
+        </section>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
